@@ -4,7 +4,6 @@ RUN apt-get update && apt-get install -y \
     git
 
 COPY ./requirements.txt /requirements.txt
-RUN ulimit -u unlimited
 RUN Rscript -e "packages <- readLines('/requirements.txt'); install.packages(packages)"
 
 COPY ./app/app.r ./app/app.r
