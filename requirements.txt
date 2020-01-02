@@ -1,1 +1,9 @@
 shiny
+shinydashboard
+leaflet
+geojsonio
+scales
+plotly
+civis
+dplyr
+tidyr
