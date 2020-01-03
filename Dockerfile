@@ -5,7 +5,8 @@ RUN apt-get update && apt-get install -y \
     libudunits2-dev \
     libprotobuf-dev \
     protobuf-compiler \
-    libgdal-dev
+    libgdal-dev \
+    libjq-dev
 
 COPY ./requirements.txt /requirements.txt
 RUN Rscript -e "packages <- readLines('/requirements.txt'); install.packages(packages)"
