@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y \
     git \
     libudunits2-dev \
     libprotobuf-dev \
-    protobuf-c-compiler \
+    protobuf-compiler \
     libgdal-dev
 
 COPY ./requirements.txt /requirements.txt
