@@ -2,7 +2,8 @@ FROM civisanalytics/datascience-r:2.7.0
 
 RUN apt-get update && apt-get install -y \
     git \
-    libudunits2-dev
+    libudunits2-dev \
+    protobuf-c-compiler 
 
 COPY ./requirements.txt /requirements.txt
 RUN Rscript -e "packages <- readLines('/requirements.txt'); install.packages(packages)"
