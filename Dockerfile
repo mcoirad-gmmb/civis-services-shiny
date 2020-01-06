@@ -1,4 +1,4 @@
-FROM mcoirad/datascience-r:latest
+FROM civisanalytics/datascience-r:2.7.0
 
 RUN apt-get update && apt-get install -y \
     git \
